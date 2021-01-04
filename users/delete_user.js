@@ -2,6 +2,7 @@
 const AWS = require("aws-sdk1");
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
+
 module.exports.create = (event, context, callback) => {
   const data = JSON.parse(event.body);
 

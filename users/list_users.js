@@ -1,6 +1,7 @@
 "use strict";
 const AWS = require("aws-sdk1");
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
+
 const params = {
   TableName: process.env.DYNAMODB_TABLE,
 };
